@@ -5,9 +5,11 @@ class ZTEST_CL_GIT definition
 
 public section.
 
-  data ATT2 type STRING .
+  data ATT type STRING .
 
-  methods CONSTRUCTOR .
+  methods CONSTRUCTOR
+    importing
+      !IV_ATT type STRING .
 protected section.
 private section.
 ENDCLASS.
@@ -18,5 +20,6 @@ CLASS ZTEST_CL_GIT IMPLEMENTATION.
 
 
 method CONSTRUCTOR.
+  att = iv_att.
 endmethod.
 ENDCLASS.
