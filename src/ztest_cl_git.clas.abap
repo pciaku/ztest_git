@@ -5,6 +5,8 @@ class ZTEST_CL_GIT definition
 
 public section.
 
+  data ATT type STRING .
+
   methods CONSTRUCTOR .
 protected section.
 private section.
